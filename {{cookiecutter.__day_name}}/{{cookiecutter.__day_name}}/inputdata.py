@@ -16,6 +16,6 @@ if not (path / "input").exists():
     raise FileNotFoundError("Input not found")
 else:
     with open(path / "input", "r") as f:
-        data = f.read().splitlines()
+        data = f.read()
 
 testdata = None

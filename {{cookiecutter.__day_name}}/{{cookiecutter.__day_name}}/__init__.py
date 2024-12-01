@@ -7,3 +7,6 @@ Initializer for Advent of Code day {{cookiecutter.day_number}}.
 *Author:* {{ cookiecutter.full_name }}
 *Date:* {{cookiecutter.__date}}
 """
+
+from .inputdata import *
+from .puzzle_code import *

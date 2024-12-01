@@ -8,6 +8,10 @@ Puzzle code for Advent of Code {{cookiecutter.year}} day {{cookiecutter.day_numb
 *Date:* {{cookiecutter.__date}}
 """
 
+from typing import Any
 from {{cookiecutter.__day_name}}.inputdata import data, testdata
 
+def preprocess_data(inputdata: str) -> Any:
+    """Put your preprocessing routine here for the input data."""
+    return inputdata.splitlines()
 

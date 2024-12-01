@@ -8,8 +8,8 @@ Tests for day {{cookiecutter.day_number}} of Advent of Code {{cookiecutter.year}
 *Date:* {{cookiecutter.__date}}
 """
 
-from {{cookiecutter.__day_name}}.inputdata import *
-from {{cookiecutter.__day_name}}.puzzle_code import *
+from {{cookiecutter.__day_name}} import testdata, preprocess_data
 
 def test_day01():
+    preproc_data = preprocess_data(testdata[0])
     assert False
