@@ -1,0 +1,12 @@
+{
+  "day_number": "{% now 'local', '%d' %}",
+  "year": "{% now 'local', '%Y' %}",
+  "__date": "{% now 'local', '%a %b %d, %Y' %}",
+  "__day_name": "day{{ cookiecutter.day_number }}",
+  "__prompts__": {
+    "day_number": "Which day to download from AoC?",
+    "year": "For which year?",
+    "session_cookie": "What is the session cookie for your AoC?",
+    "full_name": "What is your full name?"
+  }
+}
