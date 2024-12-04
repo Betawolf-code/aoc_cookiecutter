@@ -56,6 +56,8 @@ def get_examples(elem: element.Tag) -> list[str]:
     for pre_tag in elem.find_all("pre"):
         # Check for each whether they're preceded by a paragraph with the word 'example' in there and containing a child
         # of type 'code'.
+        if not pre_tag.find_previous_sibling():
+            continue
         if "example" not in pre_tag.find_previous_sibling().text or pre_tag.next.name != "code":
             continue
         res.append(pre_tag.text)
