@@ -18,4 +18,4 @@ else:
     with open(path / "input", "r") as f:
         data = f.read()
 
-testdata = None
+testdata = []

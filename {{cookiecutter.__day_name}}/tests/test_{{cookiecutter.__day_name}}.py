@@ -10,6 +10,12 @@ Tests for day {{cookiecutter.day_number}} of Advent of Code {{cookiecutter.year}
 
 from {{cookiecutter.__day_name}} import testdata, preprocess_data
 
-def test_{{ cookiecutter.__day_name }}():
+
+def test_preprocess_data():
     preproc_data = preprocess_data(testdata[0])
     assert False
+
+
+def test_{{ cookiecutter.__day_name }}():
+    assert False
+

@@ -15,4 +15,5 @@ from {{cookiecutter.__day_name}} import (data, testdata, preprocess_data)  # noq
 
 
 if __name__ == "__main__":
-    pass
+    preproc_data = preprocess_data(data)
+    ...

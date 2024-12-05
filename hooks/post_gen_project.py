@@ -83,5 +83,5 @@ if __name__ == '__main__':
     inputdata_file = Path("{{ cookiecutter.__day_name }}/inputdata.py")
     inputdata_text = inputdata_file.read_text()
     examples = get_examples(story)
-    inputdata_text = inputdata_text.replace("testdata = None", f"testdata = {examples}")
+    inputdata_text = inputdata_text.replace("testdata = []", f"testdata = {examples}")
     inputdata_file.write_text(inputdata_text)
