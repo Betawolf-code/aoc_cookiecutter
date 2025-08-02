@@ -45,8 +45,9 @@ value you copied from your browser.
 
 Create a folder for all the days of Advent of Code. I've got one for each year. **Inside that folder**, you execute
 ```bash
-cookiecutter https://github.com/Betawolf-code/aoc_cookicutter
+cookiecutter https://github.com/Betawolf-code/aoc_cookiecutter
 ```
 and answer the questions. A folder with the number of the day (e.g. day01) will be created containing your code.
+
 
 Start hacking your solution!
