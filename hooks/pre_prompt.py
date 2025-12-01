@@ -12,6 +12,12 @@ Run the prescript hook to add the session cookie
 import os
 from cookiecutter import generate
 import json
+import sys
+
+if sys.platform == "linux":
+    USER = os.environ.get("USER", "")
+else:
+    USER = os.environ.get("USERNAME", "")
 
 
 if __name__ == '__main__':
@@ -20,7 +26,7 @@ if __name__ == '__main__':
     context = generate.generate_context()
     context["cookiecutter"].update({
         'session_cookie': COOKIE,
-        'full_name': os.environ["USERNAME"]
+        'full_name': USER
     })
     with open('cookiecutter.json', 'w') as f:
         json.dump(context['cookiecutter'], f, indent=2)
