@@ -11,9 +11,9 @@ Assignment 2
 *Date:* {{cookiecutter.__date}}
 """
 
-from {{cookiecutter.__day_name}} import (data, testdata, preprocess_data)  # noqa
+from {{cookiecutter.__day_name}} import (data, testdata, preprocess_data, part2)  # noqa
 
 
 if __name__ == "__main__":
     preproc_data = preprocess_data(data)
-    ...
+    print(part2(preproc_data)

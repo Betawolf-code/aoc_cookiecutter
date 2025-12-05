@@ -8,5 +8,5 @@ Initializer for Advent of Code day {{cookiecutter.day_number}}.
 *Date:* {{cookiecutter.__date}}
 """
 
-from .inputdata import *
-from .puzzle_code import *
+from .inputdata import data, testdata
+from .puzzle_code import preprocess_data, part1, part2
