@@ -16,4 +16,4 @@ from {{cookiecutter.__day_name}} import (data, testdata, preprocess_data, part2)
 
 if __name__ == "__main__":
     preproc_data = preprocess_data(data)
-    print(part2(preproc_data)
+    print(part2(preproc_data))
