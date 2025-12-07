@@ -15,3 +15,10 @@ def preprocess_data(inputdata: str) -> Any:
     """Put your preprocessing routine here for the input data."""
     return inputdata.splitlines()
 
+
+def part1(inp: Any) -> Any:
+    ...
+
+
+def part2(inp: Any) -> Any:
+    ...
